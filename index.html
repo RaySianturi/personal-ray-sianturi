@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Personal Saya</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #111;
+            color: #f0f0f0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1200/800') no-repeat center center;
+            background-size: cover;
+        }
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #ffd700;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero-content p {
+            font-size: 24px;
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #ffd700;
+            color: #000;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #f0f0f0;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #ffd700;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #f0f0f0;
+        }
+        section {
+            padding: 80px 0;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .skill-item {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .skill-item i {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #ffd700;
+        }
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 20px 0;
+        }
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .whatsapp-button {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+        .whatsapp-button i {
+            margin-right: 10px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <img src="profil.jpg" alt="Foto Profil" class="profile-picture">
+                <h1>Nama Anda</h1>
+                <p>Pengembang Web Profesional</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ray-yudika-sianturi-423a64292/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/RaySianturi" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="htpps://x.com/RaySianturi" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/rayyyystr_?igsh=d2RuMmtibnI1dHll" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@rayyudikas?_t=8qL4Puwu2vV&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/share/bmj4FLy9gL6c17fm/" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+                <a href="#contact" class="cta-button">Hubungi Saya!</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">Tentang Saya</h2>
+                <p>I'm a student majoring in Information and Communication Technology (ICT) Education. In your daily life, you possess a strong desire to continuously learn and develop yourself. Now in your 7th semester, you find yourself at a point where academic pressures and personal challenges often collide, yet you persist with the determination to complete your studies as soon as possible.Your busy schedule is filled with projects you initiate with good intentions, such as developing a Telegram-based chatbot for health and education information, and contributing to the community through digital literacy programs for students in rural areas. However, behind this productivity lies the weight of stress, numerous responsibilities that must be completed, and the struggle to balance personal and academic life.You have a critical and analytical mindset, as reflected in your choice to conduct research at SMKS using quantitative methods. Your desire to contribute, whether through research or community activities, shows that you aim to make a meaningful impact, particularly in the field of education. On the other hand, you sometimes struggle with decision-making, often feeling hesitant and careless, though this doesn’t stop you from moving forward.On a personal level, you deeply care about friendships and social relationships, even though you've faced disappointments in the midst of it all. Despite this, you remain steadfast in handling your various responsibilities and strive to achieve success, both academically and in daily life. Your involvement in activities such as political consolidation in your region and being part of the committee for the Christmas celebration reflects your broad engagement and willingness to contribute in various aspects of life.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title">Keahlian</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-react"></i>
+                        <h3>React</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Hubungi Saya</h2>
+                <div id="contact-form">
+                    <a href="#" class="whatsapp-button" id="whatsapp-button">
+                        <i class="fab fa-whatsapp"></i> Kirim Pesan via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ray Yudika Sianturi. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const nav = document.querySelector('nav');
+            const navLinks = document.querySelectorAll('nav a');
+
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    nav.style.background = 'rgba(0, 0, 0, 0.8)';
+                } else {
+                    nav.style.background = 'transparent';
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    targetSection.scrollIntoView({behavior: 'smooth'});
+                });
+            });
+
+            const whatsappButton = document.getElementById('whatsapp-button');
+            whatsappButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                const phoneNumber = '6285261720840'; // Ganti dengan nomor WhatsApp Anda
+                const message = 'Halo, saya tertarik dengan layanan Anda.';
+                const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
